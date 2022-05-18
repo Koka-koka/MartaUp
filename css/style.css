@@ -77,7 +77,7 @@ a {
 }
 
 .header-slider__item {
-
+   
 }
 
 .header-slider__item-content {
@@ -118,4 +118,24 @@ a {
 
 .header-slider__item-images {
     margin: 10px 82px 0 0;
+}
+
+.header-dots {
+    list-style: none;
+    position: absolute;
+    right: 0;
+    top: 50%;
+
+}
+
+.header-dots button {
+    border: none;
+    background-color: #fff;
+    opacity: 0.5;
+    font-size: 0;
+    padding: 0;
+    width: 7px;
+    height: 7px;
+    border-radius: 3.5px;
+    cursor: pointer;
 }
