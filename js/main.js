@@ -4,5 +4,6 @@ $(function(){
         vertical: true,
         dots: true,
         dotsClass: 'header-dots',
+        autoplay: 1500,
     });
 });
