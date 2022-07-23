@@ -207,7 +207,12 @@ a {
 }
 
 .advantages-box__info {
-    max-width: 455px;
+    max-width: 456px;
+    padding-top: 60px;
+    background-image: url(../images/title-bg-1.svg);
+    background-repeat: no-repeat;
+    background-position: 22px 76px;
+
 }
 
 .advantages-box__title {
