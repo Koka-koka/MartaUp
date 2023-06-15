@@ -1,2 +1,2 @@
 # MartaUp
-Web Services LP  (HTML/CSS/JS, slick-slider)
+Web Services Home Page  (HTML/CSS/JS, slick-slider)
