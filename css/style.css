@@ -2,8 +2,9 @@
     box-sizing: border-box;
 }
 
-.body {
+body {
     font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
     font-size: 15px;
     line-height: 24px;
 }
@@ -13,6 +14,11 @@ a {
     color: inherit;
 }
 
+img {
+    max-width: 100%;
+}
+
+/* Header */
 .header {
     background-image: url(../images/header-bg.jpg);
     min-height: 793px;
@@ -144,6 +150,7 @@ a {
     opacity: 1;
 }
 
+/* Specialised */
 .specialised {
     min-height: 630px;
     padding: 55px 0 93px;
@@ -196,14 +203,23 @@ a {
     margin: 0 10px;
 }
 
+/* Advantages */
 .advantages {
     padding-top: 64px;
     background-color: #f4f9fd;
+    background-image: url(../images/advantages-bg.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
 }
 
 .advantages-box {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 45px;
+}
+
+.advantages-box:nth-child(2) {
+    flex-direction: row-reverse;
 }
 
 .advantages-box__info {
@@ -215,10 +231,18 @@ a {
 
 }
 
+.advantages-box:nth-child(2) .advantages-box__info {
+    background-image: url(../images/title-bg-2.svg);
+    background-position: 22px 135px;
+}
+
+.advantages-box:nth-child(3) .advantages-box__info {
+    background-image: url(../images/title-bg-3.svg);
+    background-position: 12px 95px;
+}
+
 .advantages-box__title {
     color: #202020;
-    font-family: 'Source Sans Pro';
-    font-style: normal;
     font-weight: 700;
     font-size: 35px;
     line-height: 45px;
@@ -228,17 +252,109 @@ a {
 }
 
 .advantages-box__text {
-      padding-left: 48px;
+    padding-left: 48px;
 }
 
 .advantages-box__text p {
     color: #272727;
     margin: 10px 0;
-    font-family: 'Source Sans Pro';
-    font-style: normal;
     font-weight: 400;
-    font-size: 15px;
-    line-height: 24px
-    }
+}
 
-.advantages-box__text .advantages-box__img {}
+.advantages-box__img {
+    max-width: 650px;
+}
+
+/* Reviews */
+
+.reviews {
+    padding: 40px 0 80px;
+    background-image: url(../images/reviews-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFFFFF;
+}
+
+.reviews__title {
+    max-width: 383px;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 45px;
+    text-align: center;
+    margin: 0 auto 50px;
+}
+
+.reviews__items {
+    display: flex;
+    gap: 0 20px;
+    padding: 0 120px;
+}
+
+.reviews__item {
+    flex-basis: 300px;
+    padding: 35px 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    mix-blend-mode: normal;
+    border-radius: 5px;
+}
+
+.reviews__item-profile {
+    display: flex;
+    gap: 0 20px;
+    margin-bottom: 15px;
+}
+
+.reviews__item-avatar {
+    border-radius: 50%;
+}
+
+.reviews__item-name {
+    font-weight: 600;
+}
+
+.reviews__item-position {
+    opacity: 0.5;
+}
+
+.reviews__item-text {
+    text-align: center;
+    padding-top: 29px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.reviews__item-text::before {
+    content: '';
+    background-image: url(../images/reviews-dec.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 22px;
+    height: 22px;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #FFFFFF;
+}
+.footer__inner {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #272727;
+}
+.footer__links {
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+
+}
+.footer__copy {
+    padding: 0 20px;
+}
